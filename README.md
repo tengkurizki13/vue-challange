@@ -12,7 +12,3 @@
 8. Buat online repository di Github atau Gitlab
 9. Push project ini ke online repository yang sudah anda buat
 10. Deploy project ini ke Hosting yang anda miliki atau bisa juga menggunakan layanan hosting gratis seperti Vercel
-
-## Contoh deploy project menggunakan Vercel
-
-TBD
