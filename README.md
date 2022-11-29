@@ -24,7 +24,6 @@ Ini adalah challenge pertama anda di Devcode. Pada challenge ini, anda akan dibe
 2. [Vuex](https://v3.vuex.vuejs.org/)
 3. [Vue-Router](https://v3.router.vuejs.org/guide/#html)
 4. [Jest](https://v1.test-utils.vuejs.org/guides/#getting-started)
-5. [Axios](https://axios-http.com/docs/intro)
 
 ## Langkah-langkah Deploy menggunakan Vercel
 
