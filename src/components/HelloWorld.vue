@@ -1,6 +1,6 @@
 <template>
   <div data-cy="hello-world-title" class="hello">
-    <h1>Welcome to Devcode!</h1>
+    <!-- insert header element here -->
   </div>
 </template>
 
@@ -14,9 +14,5 @@ export default {
 <style scoped lang="scss">
 .hello {
   margin: 25% 0 0;
-
-  h1 {
-    margin: 0;
-  }
 }
 </style>
