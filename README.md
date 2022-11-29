@@ -12,3 +12,11 @@
 8. Buat online repository di Github atau Gitlab
 9. Push project ini ke online repository yang sudah anda buat
 10. Deploy project ini ke Hosting yang anda miliki atau bisa juga menggunakan layanan hosting gratis seperti Vercel
+
+## Teknologi yang Digunakan
+
+1. [Vue.js](https://v2.vuejs.org/v2/guide/)
+2. [Vuex](https://v3.vuex.vuejs.org/)
+3. [Vue-Router](https://v3.router.vuejs.org/guide/#html)
+4. [Jest](https://v1.test-utils.vuejs.org/guides/#getting-started)
+5. [Axios](https://axios-http.com/docs/intro)
