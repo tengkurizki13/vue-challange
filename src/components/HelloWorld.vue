@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
-    <!-- insert img element with devcode logo here -->
-    <div data-cy="hello-world-title">
+    <!-- insert devcode logo source to img element -->
+    <!-- <img data-cy="devcode-logo" src="" alt="devcode logo" /> -->
+    <div data-cy="devcode-title">
       <!-- insert header element here -->
     </div>
   </div>
