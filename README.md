@@ -13,11 +13,12 @@ Ini adalah challenge pertama anda di Devcode. Pada challenge ini, anda akan dibe
 5. Jalankan npm install pada terminal
 6. Jalankan npm run serve pada terminal
 7. Akses localhost:8080 pada browser
-8. Tambahkan Devcode Logo pada elemen gambar yang ada pada file HelloWorld.vue
-9. Tambahkan elemen teks 'Welcome to Devcode!' pada file HelloWorld.vue
-10. Buat online repository di Github atau Gitlab
-11. Push project ini ke online repository yang sudah anda buat
-12. Deploy project ini ke Hosting yang anda miliki atau bisa juga menggunakan layanan hosting gratis seperti Vercel
+8. Buat routing baru ke halaman hello pada file router/index.js
+9. Tambahkan Devcode Logo pada elemen gambar yang ada pada file components/HelloWorld.vue
+10. Tambahkan elemen teks 'I’m ready for the next challenge!' pada file components/HelloWorld.vue
+11. Buat online repository di Github atau Gitlab
+12. Push project ini ke online repository yang sudah anda buat
+13. Deploy project ini ke Hosting yang anda miliki atau bisa juga menggunakan layanan hosting gratis seperti Vercel
 
 ## Teknologi yang Digunakan
 
