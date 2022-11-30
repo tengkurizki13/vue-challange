@@ -1,17 +1,23 @@
 <template>
   <div class="home">
-    <HelloWorld />
+    <WelcomeCard />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import WelcomeCard from "@/components/WelcomeCard.vue";
 
 export default {
   name: "HomeView",
   components: {
-    HelloWorld,
+    WelcomeCard,
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.home {
+  margin: 15% 0 0;
+}
+</style>
