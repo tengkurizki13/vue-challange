@@ -5,7 +5,9 @@
       Silahkan klik tombol di bawah ini untuk melihat hasil akhir dari perubahan
       yang kamu lakukan.
     </h2>
-    <router-link to="/hello">Lihat hasil</router-link>
+    <div data-cy="router-button">
+      <router-link to="/hello">Lihat hasil</router-link>
+    </div>
   </div>
 </template>
 

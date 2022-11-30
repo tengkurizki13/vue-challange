@@ -1,14 +1,13 @@
 <template>
   <div class="hello">
     <!-- insert devcode logo source to img element -->
-    <img
+    <!-- <img
       data-cy="devcode-logo"
-      src="../assets/devcode-logo.png"
+      src=""
       alt="devcode logo"
-    />
+    /> -->
     <div data-cy="devcode-title">
       <!-- insert header element here -->
-      <h1>Welcome to Devcode!</h1>
     </div>
   </div>
 </template>
