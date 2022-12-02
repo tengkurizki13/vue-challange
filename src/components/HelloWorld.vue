@@ -22,6 +22,7 @@ export default {
 <style scoped lang="scss">
 .hello {
   margin: 15% 0 0;
+  text-align: center;
 
   img {
     width: 15%;
