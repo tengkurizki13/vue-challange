@@ -6,7 +6,7 @@
       yang kamu lakukan.
     </h2>
     <div data-cy="router-button">
-      <router-link to="/hello">Lihat hasil</router-link>
+      <router-link class="router__btn" to="/hello">Lihat hasil</router-link>
     </div>
   </div>
 </template>
@@ -16,13 +16,3 @@ export default {
   name: "WelcomeCard",
 };
 </script>
-
-<style lang="scss" scoped>
-a {
-  padding: 12px;
-  background: aqua;
-  color: #2c3e50;
-  text-decoration-line: none;
-  border-radius: 8px;
-}
-</style>
