@@ -8,7 +8,7 @@
 4. Jalankan `npm install` pada terminal
 5. Jalankan `npm run serve` pada terminal
 6. Akses `localhost:8080` pada browser
-7. Selesaikan challenge yang terdapat pada file `router/index.js`, `HelloView.vue`, `HelloWorld.vue`
+7. Selesaikan challenge yang terdapat pada file `router/index.js`, `HelloWorld.vue`
 8. Buat online repository di Github
 9. Push project ini ke online repository yang sudah anda buat
 10. Deploy project ini ke Hosting yang anda miliki atau bisa juga menggunakan layanan hosting gratis seperti Vercel
