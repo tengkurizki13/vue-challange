@@ -1,13 +1,14 @@
 <template>
   <div class="hello">
-    <!-- insert devcode logo source to img element -->
+    <!-- Uncomment elemen img di bawah ini dan tambahkan source dari gambar logo devcode yang ada di dalam folder assets -->
     <!-- <img
       data-cy="devcode-logo"
       src=""
       alt="devcode logo"
     /> -->
     <div data-cy="devcode-title">
-      <!-- insert header element here -->
+      <!-- Tambahkan elemen heading 1 di bawah ini dengan berisi kalimat I'm ready
+      for the next challenge! -->
     </div>
   </div>
 </template>

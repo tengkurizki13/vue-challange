@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
 
-// uncomment this code
+// Uncomment baris kode dibawah ini untuk meng-import Halaman Hello ke dalam router
 // import HelloView from "../views/HelloView.vue";
 
 Vue.use(VueRouter);
@@ -13,7 +13,7 @@ const routes = [
     name: "home",
     component: HomeView,
   },
-  // uncomment this code to create routing to hello page
+  // Uncomment baris kode dibawah ini untuk menambahkan routing baru ke Halaman Hello
   // {
   //   path: "/hello",
   //   name: "hello",

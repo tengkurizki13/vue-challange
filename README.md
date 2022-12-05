@@ -15,7 +15,7 @@ Ini adalah challenge pertama anda di Devcode. Pada challenge ini, anda akan dibe
 7. Akses `localhost:8080` pada browser
 8. Buat routing baru ke halaman hello pada file `src/router/index.js`
 9. Tambahkan Devcode Logo pada elemen gambar yang ada pada file `src/components/HelloWorld.vue`
-10. Tambahkan elemen teks `I’m ready for the next challenge!` pada file `src/components/HelloWorld.vue`
+10. Tambahkan elemen teks `I'm ready for the next challenge!` pada file `src/components/HelloWorld.vue`
 11. Buat online repository di Github atau Gitlab
 12. Push project ini ke online repository yang sudah anda buat
 13. Deploy project ini ke Hosting yang anda miliki atau bisa juga menggunakan layanan hosting gratis seperti Vercel
