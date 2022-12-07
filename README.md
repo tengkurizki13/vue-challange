@@ -41,6 +41,8 @@ Peserta dapat menampilkan Halaman Hello yang berisi Logo Devcode dan Teks `I'm r
    ![Step 6](create-repo-steps/step-6.png)
 7. Klik tombol **Create Repository** untuk membuat repositori baru di Github
    ![Step 7](create-repo-steps/step-7.png)
+8. Setelah selesai, anda akan diarahkan ke halaman repo baru yang sudah dibuat sebelumnya. Silahkan ikuti langkah-langkah untuk clone repo yang sudah dibuat ke local anda
+   ![Step 8](create-repo-steps/step-8.png)
 
 ## Langkah-langkah Deploy menggunakan Vercel
 
