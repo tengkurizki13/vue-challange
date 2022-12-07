@@ -33,7 +33,7 @@ Peserta dapat menampilkan Halaman Hello yang berisi Logo Devcode dan Teks `I'm r
    ![Step 2](create-repo-steps/step-2.png)
 3. Jika klik ikon **+**, maka langkah selanjutnya adalah pilih opsi **New Repository**
    ![Step 3](create-repo-steps/step-3.png)
-4. Selanjutnya isi kolom **Repository name** dengan nama repository yang akan dibuat
+4. Selanjutnya isi kolom **Repository name** dengan nama repositori yang akan dibuat
    ![Step 4](create-repo-steps/step-4.png)
 5. Tambahkan deskripsi repositori pada kolom **Description**, langkah ini opsional
    ![Step 5](create-repo-steps/step-5.png)
