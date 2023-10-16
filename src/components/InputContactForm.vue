@@ -44,10 +44,17 @@
 </template>
 
 <script>
+// TODO:
+// 1. Buat props selectedContact dan isEdit
+// 2. Buat metode untuk dispatch fungsi ubah data kontak yang sudah dibuat sebelumnya di store/index.js di dalam fungsi onSubmit
+// 3. Pada fungsi onSubmit, buat percabangan dengan kondisi ketika isEdit bernilai true, maka jalankan fungsi ubah data kontak dan untuk sebaliknya, maka jalankan fungsi untuk tambah kontak baru
+
 export default {
   name: "InputContactForm",
   props: {
     title: String,
+    selectedContact: Object,
+    isEdit: Boolean,
   },
   data() {
     return {
@@ -58,16 +65,36 @@ export default {
       },
     };
   },
+  watch: {
+    // TODO: Uncomment baris kode di bawah untuk mengisi input field dengan data kontak yang akan diubah ketika isEdit bernilai true
+    isEdit(val) {
+      if (val === true) {
+        this.input.full_name = this.selectedContact.full_name;
+        this.input.phone_number = this.selectedContact.phone_number;
+        this.input.email = this.selectedContact.email;
+      }
+    },
+  },
   methods: {
     async onSubmit() {
-      // TODO: Uncomment baris kode di bawah untuk men-dispatch fungsi mengirim data kontak baru yang sudah dibuat sebelumnya di store/index.js lalu panggil fungsi untuk mengambil semua data kontak dari api dan mereset value yang ada di setiap input field
+      if (this.isEdit)
+      {
+        await this.$store.dispatch("editContact", {
+        id: this.selectedContact.id,
+        full_name: this.input.full_name,
+        phone_number: this.input.phone_number,
+        email: this.input.email,
+      } );
+      }else{
       await this.$store.dispatch("addNewContact", {
         full_name: this.input.full_name,
         phone_number: this.input.phone_number,
         email: this.input.email,
-      });
-      this.$parent.getAllContactsData();
+      } );
+      }
       this.resetInputValue();
+      this.$parent.resetSelectedData();
+      this.$parent.getAllContactsData();
     },
     resetInputValue() {
       this.input.full_name = "";
