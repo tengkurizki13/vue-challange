@@ -1,16 +1,17 @@
 <template>
   <div class="hello">
-    <!-- TODO: Uncomment elemen img di bawah ini dan tambahkan source dari gambar logo devcode yang ada di dalam folder assets -->
     <img
       data-cy="devcode-logo"
-      :src="require('@/assets/devcode-logo.png')"
+      src="../assets/devcode-logo.png"
       alt="devcode logo"
     />
     <div data-cy="devcode-title">
-      <!-- TODO: Tambahkan elemen heading 1 di bawah ini dengan berisi kalimat I'm ready
-      for the next challenge! -->
-      <h1>I'm ready
-      for the next challenge!</h1>
+      <h1>I'm ready for the next challenge!</h1>
+    </div>
+    <div data-cy="router-button">
+      <router-link class="router__btn" to="/contacts"
+        >Level Selanjutnya</router-link
+      >
     </div>
   </div>
 </template>
