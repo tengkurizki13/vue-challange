@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import ContactManagerView from "../views/ContactManagerView.vue";
 
 // TODO: Uncomment baris kode dibawah ini untuk meng-import Halaman Hello ke dalam router
 import HelloView from "../views/HelloView.vue";
@@ -18,6 +19,11 @@ const routes = [
     path: "/hello",
     name: "hello",
     component: HelloView,
+  },
+  {
+    path: "/contacts",
+    name: "contacts",
+    component: ContactManagerView,
   },
 ];
 
