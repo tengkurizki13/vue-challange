@@ -45,9 +45,10 @@
 
 <script>
 // TODO:
-// 1. Buat props selectedContact dan isEdit
-// 2. Buat metode untuk dispatch fungsi ubah data kontak yang sudah dibuat sebelumnya di store/index.js di dalam fungsi onSubmit
-// 3. Pada fungsi onSubmit, buat percabangan dengan kondisi ketika isEdit bernilai true, maka jalankan fungsi ubah data kontak dan untuk sebaliknya, maka jalankan fungsi untuk tambah kontak baru
+// 1. Buat sebuah fungsi yang akan memvalidasi apakah format dari nomor telepon dan email yang dimasukkan sudah benar atau belum
+// 2. Jika format nomor telepon salah, maka tampilkan sebuah alert dengan isi pesan "Nomor telepon hanya dapat berupa angka."
+// 3. Jika format email salah, maka tampilkan sebuah alert dengan isi pesan "Format email tidak sesuai."
+// 4. Jika format nomor telepon dan email sudah benar, maka lanjutkan proses untuk membuat kontak baru atau meng-update kontak
 
 export default {
   name: "InputContactForm",
@@ -58,6 +59,12 @@ export default {
   },
   data() {
     return {
+       // eslint-disable-next-line
+      // TODO: Uncomment baris kode di bawah untuk membuat regex yang akan membantu memvalidasi format nomor telepon
+      // regexPhoneNumber: /^[0-9]*$/,
+      // eslint-disable-next-line
+      // TODO: Uncomment baris kode di bawah untuk membuat regex yang akan membantu memvalidasi format  email
+      // regexEmail: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
       input: {
         full_name: "",
         phone_number: "",
@@ -77,20 +84,32 @@ export default {
   },
   methods: {
     async onSubmit() {
-      if (this.isEdit)
-      {
-        await this.$store.dispatch("editContact", {
-        id: this.selectedContact.id,
-        full_name: this.input.full_name,
-        phone_number: this.input.phone_number,
-        email: this.input.email,
-      } );
-      }else{
-      await this.$store.dispatch("addNewContact", {
-        full_name: this.input.full_name,
-        phone_number: this.input.phone_number,
-        email: this.input.email,
-      } );
+      const phonePattern =  /^[0-9\s]*$/;
+      const isValidPhone = phonePattern.test( this.input.phone_number);
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const isValidEmail = emailPattern.test( this.input.email ); 
+
+      if ( !isValidPhone ) alert( 'Nomor telepon hanya dapat berupa angka.');
+
+       if ( !isValidEmail ) alert( 'Format email tidak sesuai.' );
+    
+
+      if (isValidEmail && isValidPhone) {
+        if (this.isEdit)
+        {
+          await this.$store.dispatch("editContact", {
+          id: this.selectedContact.id,
+          full_name: this.input.full_name,
+          phone_number: this.input.phone_number,
+          email: this.input.email,
+        } );
+        }else{
+        await this.$store.dispatch("addNewContact", {
+          full_name: this.input.full_name,
+          phone_number: this.input.phone_number,
+          email: this.input.email,
+        } );
+        }
       }
       this.resetInputValue();
       this.$parent.resetSelectedData();
